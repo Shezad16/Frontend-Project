@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Razor Pay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <style>
+      .background-iamge{
+       background-size: cover;
+      width: 100%; /* home page*/
+      }
+
+  .intro{
+    columns: 2;
+    width: 600px;
+    height: 290px;
+    direction: ltr;
+    box-sizing: border-box;
+    border: 0px solid black;
+    margin-left: 7.4rem;
+   padding: 1rem;
+   background-color:lightgrey;
+   border-radius: 9px; /* home page*/
+}
+
+.intro1{
+      
+    width: 400px;
+    height: 290px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0px solid black;
+    margin-left: 7.4rem;
+    padding: 1rem;
+    background-color:lightgrey;
+    border-radius: 9px; /* home page*/
+}
+
+.grid1
+{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.9rem;
+padding: 0.4rem;
+margin-left: 7rem;
+align-items: center; /* home page*/
+}
+
+.navbar-nav ul :hover{
+    transform: scale(1.1);
+    color: aqua;
+}
+
+ul a:hover{
+    transform: scale(1.2);
+    color: aqua;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    background-color: rgb(216, 216, 216);
+    border-top-right-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+}
+
+.box{
+  left: 0;
+}
+
+ .footer a:hover {
+  color: #FCF5F5;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(19, 35, 85);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+    <img src="razor.png" alt="Logo" width="130px" height="90px" class="d-inline-block align-text-right">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mx-5 mb-lg-0" style="gap: 1.2rem;">
+        <li class="nav-item">
+          <a class="nav-link active text-light mt-2" style="font-size: 1.2rem;" aria-current="page" href="#">Payments</a><hr>
+        </li>
+        <li class="nav-item mt-2">
+          <a class="nav-link text-light" style="font-size: 1.2rem;" href="#">Banking</a><hr>
+        </li>
+        <li class="nav-item mt-2">
+          <a class="nav-link text-light" style="font-size: 1.2rem;" href="#">Crediting</a><hr>
+        </li>
+        <li class="nav-item mt-2">
+          <a class="nav-link text-light" style="font-size: 1.2rem;" href="#">Payroll</a><hr>
+        </li>
+        <li class="nav-item mt-2">
+          <a class="nav-link text-light" style="font-size: 1.2rem;" href="#">Resources</a><hr>
+        </li>
+        <li class="nav-item mt-2">
+          <a class="nav-link text-light" style="font-size: 1.2rem;" href="#">Support</a><hr>
+        </li>
+         <li class="nav-item mt-2">
+          <a class="nav-link text-light" style="font-size: 1.2rem;" href="#">Pricing</a><hr>
+        </li>
+         <img src="india_flag.png" alt="Logo" width="50px" height="30px" class="d-inline-block align-text-right mt-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light  mt-2" href="#" role="button" data-bs-toggle="dropdown" style="font-size: 1.2rem;"aria-expanded="false">
+            Browse
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="LoginIn.html">Login In</a></li>
+            <li><a class="dropdown-item" href="SignUp.html">Sign Up</a></li>
+             <li><a class="dropdown-item" href="About.html">About Us</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      <form class="d-flex w-50 mb-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-info" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!--carousel-->
+<div class="container-fluid mt-3 mb-3">
+<div class="row">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1500" >
+      <img src="carousel1.png" class="d-block w-100" alt="..." height="500px">
+    </div>
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="carousel2.png" class="d-block w-100" alt="..." height="500px" >
+    </div>
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="carousel3.png" class="d-block w-100" alt="..." height="500px">
+    </div>
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="carousel4.png" class="d-block w-100" alt="..." height="500px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+<!--Image and text-->
+<div class="background-iamge">
+  <div class="row">
+    <img src="content2.png" class="w-full object-fill" alt="..."  >
+  </div>
+  <br>
+</div>
+
+<div class="background-iamge mt-0">
+<div class="row">
+  <img src="content1.png" class="w-full object-fill" alt="..."  >
+</div>
+</div>
+
+<!--content-->
+<div class="container-fluid mt-4">
+  <h1 style="text-align: center; font-weight: bold; font-style: inherit; font-size: 2rem;" >Accept Payments with Razorpay Payment Suite</h1>
+</div>
+
+ <div class="container-fluid">
+  <div class="row">
+    <!--section1-->
+<section  class="intro mt-5 col-7" >
+    <h2 style="font-size: 22px; text-transform: capitalize;">Superchrage your business with 
+      the all-powerful <div class="color text-info">Payment Gateway!!</div></h2>
+      <div class="container mt-4">
+      <p>* 100+ Payment Methods</p>
+      <p>* Industry Leading Success Rate</p>
+      <p>* Superior Checkout Experience</p>
+      <p>* Easy to Integrate</p>
+      <p>* Instant Settlements from day 1</p>
+      <p>* In-depth Reporting and Insights</p>
+      <a href="SignUp.html" button type="submit"  class="btn btn-primary mx-3">SignUp</button></a>
+</section>
+
+<!--section2-->
+<section1  class="intro1 mt-5 col-7"  >
+    <h2 style="font-size: 22px; text-transform: capitalize;"><div class="color text-info">Payment Gateway!!</div></h2>
+    <br>
+    <div>
+    <i class="bi bi-credit-card"></i>&nbsp;
+    &nbsp;Pay Using Card
+    <br>
+   <i class="bi bi-fast-forward-circle-fill"></i>
+  &nbsp;UPI ID
+  <br>
+  <i class="bi bi-bank2"></i>
+  &nbsp;Net Banking
+  <br>
+  <i class="bi bi-calendar-event"></i>
+  &nbsp;EMI<span class="text-success" ><sup style="font-size: 11px;">(NO COST EMI AVAILABLE)</sup></span>
+  <br>
+  <i class="bi bi-wallet2"></i>
+     &nbsp;WALLET
+    </div>
+     <br>
+      <a href="SignUp.html" button type="submit"  class="btn btn-primary mx-3">SignUp</button></a>
+</section>
+ </div>
+ </div>
+  
+
+
+<!--Cards-->
+<div class="conatiner grid1 mt-5">
+
+  <!--card1-->
+  
+  <div class="card" style="width: 14rem; height: 14rem;">
+  <div class="card-body">
+    <h5 class="card-title">Payments Link</h5>
+    <p class="card-text">Share payment link via an email,SMS,messenger,chatbot,etc and get paid immediately.</p>
+    <a href="#" class="card-link" style="text-decoration: none;">Know More ></a>
+  </div>
+</div>
+
+
+<!--card2-->
+
+  <div class="card" style="width: 14rem; height: 14rem;">
+  <div class="card-body">
+    <h5 class="card-title">Banking</h5>
+    <p class="card-text">Share payment link via an email,SMS,messenger,chatbot,etc and get paid immediately.</p>
+    <a href="#" class="card-link" style="text-decoration: none;">Know More ></a>
+  </div>
+</div>
+
+
+<!--card3-->
+
+  <div class="card" style="width: 14rem; height: 14rem;">
+  <div class="card-body">
+    <h5 class="card-title">Crediting</h5>
+    <p class="card-text">Share payment link via an email,SMS,messenger,chatbot,etc and get paid immediately.</p>
+    <a href="#" class="card-link" style="text-decoration: none;">Know More ></a>
+  </div>
+</div>
+
+
+<!--card4-->
+
+  <div class="card" style="width: 14rem; height: 14rem;">
+  <div class="card-body">
+    <h5 class="card-title">Payroll</h5>
+    <p class="card-text">Share payment link via an email,SMS,messenger,chatbot,etc and get paid immediately.</p>
+    <a href="#" class="card-link" style="text-decoration: none;">Know More ></a>
+  </div>
+</div>
+
+
+<!--card5-->
+
+  <div class="card" style="width: 14rem; height: 14rem;">
+  <div class="card-body">
+    <h5 class="card-title">Support</h5>
+    <p class="card-text">Share payment link via an email,SMS,messenger,chatbot,etc and get paid immediately.</p>
+    <a href="#" class="card-link" style="text-decoration: none;">Know More ></a>
+  </div>
+</div>
+
+
+<!--card6-->
+
+  <div class="card" style="width: 14rem; height: 14rem;">
+  <div class="card-body">
+    <h5 class="card-title">Pricing</h5>
+    <p class="card-text">Share payment link via an email,SMS,messenger,chatbot,etc and get paid immediately.</p>
+    <a href="#" class="card-link" style="text-decoration: none;">Know More ></a>
+  </div>
+</div>
+
+</div> <!--card div closing-->
+
+<!--Footer-->
+    <div class="container-fluid relative-bottom mt-5 bg-dark text-light">
+    <div class="row pt-2 m-0">
+
+        <div class="footer col-sm-2  col-3">
+        <h4>Banking Rules</h4>
+        
+        <h5><a href="#" style="text-decoration: none;">RazorpayX</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Source to pay</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Current Accounts</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Payouts</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Payout Links</a><br></h5>
+         <h5><a href="#" style="text-decoration: none;">Crediting</a><br></h5>
+        </div>
+
+        <div class="footer col-sm-2 col-3">
+        <h4>Resources</h4>
+        <h5><a href="#" style="text-decoration: none;">Blog</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Learn</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Customers Stories</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Events</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Chargeback Guide</a><br></h5>
+         <h5><a href="#" style="text-decoration: none;">Chargeback Guide</a><br></h5>
+        </div>
+
+        <div class="footer col-sm-2 col-3">
+        <h4>Free Tools</h4>
+        <h5><a href="#" style="text-decoration: none;">GST Calculator</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">GST Number Search</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">GST Search by PAN</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">ROI Calculator</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">CAGR Calculator</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">EBITDA Calculator</a><br></h5>
+        </div>
+
+        <div class="footer col-sm-2 col-3">
+        <h4>Company</h4>
+        <h5><a href="#" style="text-decoration: none;">Terms Of Use</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;"> Privacy Policy</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Career</a><br></h5>
+         <h5><a href="About.html" style="text-decoration: none;">About Us</a><br></h5>
+        <h5><a href="Contact.html" style="text-decoration: none;">Contact Us</a><br></h5>
+        <h5><a href="#" style="text-decoration: none;">Grievance Redressal</a><br></h5>
+        </div>
+        
+        <div class="footer col-lg-2 col-3" style="text-align: center;">
+        <h4 style="font-size: 18px; font-weight: bold;">FIND US ONLINE</h4>   
+        <h4><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></h4>
+        <h4><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></h4>
+        <h4><a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a></h4>
+        <h4><a href="#" target="_blank"><i class="bi bi-github"></i></a></h4>
+        <h4><a href="#" target="_blank"><i class="bi bi-linkedin"></i></a></h4>
+        <h4><a href="#" target="_blank"><i class="bi bi-twitch"></i></a></h4>
+        </div>
+
+        <div class="col-lg-2 col-3">
+        <span>
+          REGD.OFFICE ADDRESS
+          <br>
+          Razorpay Software Ltd,
+          1st Floor,SJR Cyber,
+          22 Laksar Hosur Road,Adugodi,
+          Bengaluru, 560030,
+          Karnataka,India
+          CIN:U72200KA2013PLC097389
+          &copy; Razorpay 2025
+           <h6><i class="bi bi-telephone-plus-fill" style="font-size: 0.91rem; font-weight: bold;"> 7779092668</i></h6>
+           <h6>E-mail: Razorpay@gmail.com</h6>
+        </span>
+        </div>
+         
+    </div> <!-- Closing of footer container & row -->
+    </div>
+
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

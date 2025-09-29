@@ -1,0 +1,53 @@
+.background-iamge{
+    background-size: cover;
+    width: 100%; /* home page*/
+}
+
+.border{
+    border: 15px solid blue;
+    width: 200px;
+    justify-self: center;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: rgb(19, 35, 85);
+    color: white;
+    margin: 1rem;
+    padding: 0.7rem; /* login & sign up*/
+}
+
+.intro{
+    width: 1000px;
+    height: 400px;
+   direction: ltr;
+   box-sizing: border-box;
+   border: 0px solid black;
+   margin: 2rem;
+   padding: 1rem;
+   background-color:lightgrey;
+   border-radius: 9px; /* home page*/
+}
+
+.grid1
+{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2.9rem;
+padding: 0.4rem;
+align-items: center; /* home page*/
+}
+
+ul :hover{
+    transform: scale(1.1);
+    color: aqua;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    background-color: rgb(216, 216, 216);
+    border-top-right-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+}
+
